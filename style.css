@@ -3,6 +3,7 @@
     --output-color: #a2bbcf;
     --equals-color: #FF6F61;
     --ac-color: #4EF0C8;
+    --operation-color: #FFB300;
 }
 
 *{
@@ -58,6 +59,10 @@ main{
 #ac-btn{
     background-color: var(--ac-color);
     width: 87px;
+}
+
+.operation{
+    background-color: var(--operation-color);
 }
 
 /* Button when hovered */
