@@ -66,3 +66,8 @@ main{
 }
 
 /* Button when hovered */
+
+.calculator-btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
