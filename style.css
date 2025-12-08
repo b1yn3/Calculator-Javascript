@@ -1,6 +1,15 @@
+:root{
+    --primary-bg-color: #142f44;
+    --output-color: #a2bbcf;
+    --equals-color: #FF6F61;
+    --ac-color: #4EF0C8;
+}
+
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 body{
@@ -12,9 +21,43 @@ body{
 }
 
 main{
-    height: 70vh;
-    background-color: pink;
+    height: 64vh;
+    background-color: var(--primary-bg-color);
     width: 400px;
     margin-top: 100px;
-
 }
+
+.row{
+    margin: 10px;
+    width: 95%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.output-box{
+    height: 100%;
+    width: 300px;
+    background-color:  	var(--output-color);
+}
+
+.calculator-btn{
+    width: 80px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Specific Buttons */
+
+
+#equals-btn{
+    background-color: var(--equals-color);
+}
+
+#ac-btn{
+    background-color: var(--ac-color);
+    width: 87px;
+}
+
+/* Button when hovered */
