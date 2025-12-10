@@ -4,6 +4,7 @@
     --equals-color: #FF6F61;
     --ac-color: #4EF0C8;
     --operation-color: #FFB300;
+    --num-color: white;
 }
 
 *{
@@ -22,7 +23,7 @@ body{
 }
 
 main{
-    height: 64vh;
+    height: 460px;
     background-color: var(--primary-bg-color);
     width: 400px;
     margin-top: 100px;
@@ -41,13 +42,33 @@ main{
     height: 100%;
     width: 300px;
     background-color:  	var(--output-color);
+    color: azure;
+    text-align: right;
 }
+
+.prev-num-inp{
+    height: 30%;
+    font-size: 26px;
+}
+
+.current-num-inp{
+    height: 70%;
+    align-content: center;
+}
+
 
 .calculator-btn{
     width: 80px;
     border: none;
     border-radius: 3px;
+    background-color: var(--num-color);
+    
 }
+
+.calculator-btn:disabled{
+    background-color: var(--num-color);
+}
+
 
 /* Specific Buttons */
 
