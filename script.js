@@ -21,15 +21,45 @@ function secondNumInput(){
     dotBtn.disabled = false;
 }
 
+// Operations
+
+function dot(){
+    temp_num += '.'
+    dotBtn.disabled = true;
+}
+
 function add(){
     secondNumInput();
     operation = "+";
 }
 
+function minus(){
+    secondNumInput();
+    operation = "-";
+}
+
+function multiply(){
+    secondNumInput();
+    operation = "*";
+}
+
+function divide(){
+    secondNumInput();
+    operation = "/";
+}
+
+// Others
+
 function equals(){
+    const ops = {
+      "+": (x, y) => x + y,
+      "-": (x, y) => x - y,
+      "*": (x, y) => x * y,
+      "/": (x, y) => x / y,
+    };
     prev_num = parseFloat(prev_num, 10);
     temp_num = parseFloat(temp_num, 10);
-    console.log(prev_num + temp_num);
+    let result = ops[operation](prev_num, temp_num);
     prev_num = '';
     temp_num = '';
     dotBtn.disabled = false;
