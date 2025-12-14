@@ -10,10 +10,10 @@
     <main>
         <div class="row" id="main-row">
             <div class="output-box">
-                <div class="prev-num-inp"></div>
-                <div class="current-num-inp"></div>
+                <div id="prev-num-inp"> </div>
+                <div id="current-num-inp"> </div>
             </div>
-            <button class="calculator-btn" id="ac-btn">AC</button>
+            <button class="calculator-btn" id="ac-btn" onclick=clearDisplay()>AC</button>
         </div>
 
         <div class="row">
@@ -38,7 +38,7 @@
         </div>
 
         <div class="row">
-            <button class="calculator-btn" id="dot-btn" onclick=dot()>.</button>
+            <button class="calculator-btn" id="dot-btn">.</button>
             <button class="calculator-btn num">0</button>
             <button class="calculator-btn operation" onclick=add()>+</button>
             <button class="calculator-btn" id="equals-btn" onclick=equals()>=</button>

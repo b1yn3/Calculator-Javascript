@@ -46,12 +46,12 @@ main{
     text-align: right;
 }
 
-.prev-num-inp{
+#prev-num-inp{
     height: 30%;
     font-size: 26px;
 }
 
-.current-num-inp{
+#current-num-inp{
     height: 70%;
     align-content: center;
 }
